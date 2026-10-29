@@ -6,22 +6,22 @@ public class Produto {
     private double preco;
     private double estoque;
 
-    public Produto(int codigo, String nome, double preco, double estoque){
+    public Produto(int codigo, String nome, double preco, double estoque) {
         this.codigo = codigo;
         this.nome = nome;
         this.preco = preco;
         this.estoque = estoque;
     }
 
-    public String getNome(){
+    public String getNome() {
         return nome;
     }
 
-    public int getCodigo(){
+    public int getCodigo() {
         return codigo;
     }
 
-    public double getEstoque(){
+    public double getEstoque() {
         return estoque;
     }
 
@@ -33,10 +33,11 @@ public class Produto {
         this.estoque = estoque;
     }
 
-    public double diminuiEstoque(double qtdProduto){
-       double novoEstoque = estoque - qtdProduto;
-       setEstoque(novoEstoque);
-       return novoEstoque;
+    public double diminuiEstoque(double qtdProduto) {
+        double novoEstoque = estoque - qtdProduto;
+        setEstoque(novoEstoque);
+        return novoEstoque;
     }
+
 
 }
